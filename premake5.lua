@@ -1,11 +1,13 @@
 project "msdfgen"
 	language    "C++"
 	kind        "StaticLib"
-	defines     { "N_FSEEKO" }
-	warnings    "off"
-
+    includedirs {
+        "./",
+		"../libschrift"
+	}
 	files
 	{
-		"**.h",
-		"**.cpp"
+		"*.cpp",
+		"core/*.cpp",
+		"../libschrift/schrift.c"
 	}

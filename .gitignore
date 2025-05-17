@@ -20,6 +20,8 @@
 *.suo
 *.VC.opendb
 *.VC.db
+bin/
+obj/
 /bin/*.lib
 /bin/msdfgen
 output.png

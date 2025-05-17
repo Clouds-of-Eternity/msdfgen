@@ -25,7 +25,6 @@ public:
     double operator()(Delta d) const;
     DistanceMapping inverse() const;
 
-private:
     double scale;
     double translate;
 
